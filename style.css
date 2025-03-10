@@ -1,0 +1,363 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #333;
+    padding: 15px 0;
+    text-align: center;
+}
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+/* Style for Navbar Icons */
+nav {
+    background-color: #007ee5;  /* Blue background */
+    padding: 15px 0;
+    text-align: center; /* Center the links */
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+nav a {
+    color: white;  /* White text */
+    text-decoration: none;  /* No underline */
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 20px;  /* Spacing between items */
+    display: inline-flex;  /* Icons and text side by side */
+    align-items: center;  /* Vertically center icon and text */
+    gap: 5px;  /* Space between icon and text */
+    transition: color 0.3s, transform 0.3s;  /* Smooth effect */
+}
+
+nav a i { 
+    font-size: 18px;  /* Icon size */
+}
+
+nav a:hover {
+    color: #ffcc00;  /* Yellow hover color */
+    transform: scale(1.1);  /* Slight zoom effect */
+}
+
+/* Mobile friendly (stack vertically if screen is small) */
+@media (max-width: 600px) {
+    nav {
+        padding: 10px 0;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px 0;  /* Vertical stacking on smaller screens */
+    }
+}
+
+
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #ffcc00;
+    margin: 0;
+}
+
+/* Section Styling (Applies to all pages) */
+section {
+    padding: 5px 10px;
+    max-width: 550px;
+    margin: 10px auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: justify;
+    justify-content: center;
+}
+
+ h1 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+    text-align: center;
+    color: grey;
+}
+
+/* about me  */
+
+.container{
+    padding: 5px 10px;
+    background-color: whitesmoke;
+    width: 100%;
+    height: 100vh;
+    margin: 10px auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: justify;
+    justify-content: center;
+}
+
+/* end about me */
+
+/* projects */
+.project_container{
+    padding: 5px 10px;
+    background-color: whitesmoke;
+    width: 100%;
+    height: 100vh;
+    /* margin: 10px auto; */
+    border-radius: 5px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    display: flex;
+
+   
+}
+.project_title{
+    width: 100%;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    background-color: red;
+}
+
+.project_cards{
+    width: 400px;
+    height: 400px;
+    /* background-color: blue; */
+    margin-top: 80px;
+    margin-left: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+/* Profile Picture Styling */
+.profile-pic {
+    width: 10px;
+    height: 10px;
+    border-radius: 10%;
+    
+    border: 3px solid #ffcc00;
+    display: block;
+    margin: 0 auto 15px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+ 
+
+
+/* Optional hover effect */
+.profile-pic:hover {
+    transform: scale(1.05);       /* Slight zoom effect on hover */
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);  /* Increase shadow on hover */
+}
+
+/* Responsive size adjustment */
+@media (max-width: 50px) {
+    .profile-pic {
+        width: 10%;
+        height: min-content;
+    }
+}
+
+/* Paragraph Text */
+p {
+    font-size: 1.1em;
+    color: #f50606;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Form Styling (for contact page if needed) */
+
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    align-self: flex-start;
+}
+
+
+
+
+button:hover {
+    background-color: #0056b3;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 600px;
+    
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+form textarea {
+    width: 100%; /* Stretches to full form width */
+    height: 100px; /* Reduced height */
+    padding: 8px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    resize: none; /* Prevent manual resizing */
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+/* Focus effect when user clicks into the message field */
+form textarea:focus {
+    border-color: #007ee5;
+    box-shadow: 0 0 6px rgba(0, 126, 229, 0.3);
+}
+
+/* Optional: Style placeholder text */
+form textarea::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+
+
+
+form button {
+    background-color: #5cb85c;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+form button:hover {
+    background-color: #4cae4c;
+}
+
+
+/* Links (for project page if needed) */
+.project a {
+    display: inline-block;
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+.project a:hover {
+    background-color: #0056b3;
+}
+
+/* Project Cards (projects page) */
+.project {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Project Image */
+.project img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 10px;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 400px) {
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+
+    
+    
+        section {
+            padding: 20px 10px;
+        }
+    
+    
+
+    input, textarea {
+        width: 100%;
+    }
+    form {
+        width: 95%;
+        padding: 15px;
+    }
+}
+
+/* Social Icons Container */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* General Icon Styling */
+.social-icons a {
+    font-size: 32px;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+}
+
+/* WhatsApp Icon */
+.social-icons a[title="WhatsApp"] i {
+    color: #25D366;
+}
+.social-icons a[title="WhatsApp"]:hover i {
+    transform: scale(1.3);
+    color: #128C7E;
+}
+
+/* TikTok Icon */
+.social-icons a[title="TikTok"] i {
+    color: #000;
+}
+.social-icons a[title="TikTok"]:hover i {
+    transform: scale(1.3);
+    color: #ff0050;
+}
+
+/* LinkedIn Icon */
+.social-icons a[title="LinkedIn"] i {
+    color: #0077B5;
+}
+.social-icons a[title="LinkedIn"]:hover i {
+    transform: scale(1.3);
+    color: #004182;
+}
