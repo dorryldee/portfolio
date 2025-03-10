@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: Optician sans, sans-serif;
+    font-family: Arial, sans-serif;
     background-color: #f0f0f5;
     color: #333;
     margin: 0;
@@ -89,14 +89,31 @@ hr {
 }
 
 /* Section Styling (Applies to all pages) */
-section {
-    padding: 5px 10px;
-    max-width: 550px;
-    margin: 10px auto;
-    border-radius: 5px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    text-align: justify;
-    justify-content: center;
+/* Welcome Section */
+.welcome_section {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    /* background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+}
+
+/* Title Styling */
+.welcome_section h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+/* Paragraph Styling */
+.welcome_section p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.6;
 }
 
  h1 {
@@ -232,71 +249,130 @@ p {
 }
 
 /* Form Styling (for contact page if needed) */
-
-
-label {
-    font-weight: bold;
-    margin-top: 10px;
-    align-self: flex-start;
-}
-
-
-
-
-button:hover {
-    background-color: #0056b3;
-}
-form {
+/* Contact Section */
+.contact_section {
     display: flex;
-    flex-direction: column;
-    width: 80%;
-    max-width: 600px;
-    
-    margin: 20px auto;
-    padding: 20px;
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-form textarea {
-    width: 100%; /* Stretches to full form width */
-    height: 100px; /* Reduced height */
-    padding: 8px;
-    border: 2px solid #ccc;
-    border-radius: 6px;
-    font-size: 14px;
-    resize: none; /* Prevent manual resizing */
-    outline: none;
-    transition: border-color 0.3s ease;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
 }
 
-/* Focus effect when user clicks into the message field */
-form textarea:focus {
-    border-color: #007ee5;
-    box-shadow: 0 0 6px rgba(0, 126, 229, 0.3);
+/* Left Side - Contact Info */
+.contact_info {
+    width: 40%;
 }
 
-/* Optional: Style placeholder text */
-form textarea::placeholder {
-    color: #aaa;
-    font-style: italic;
+.contact_info h1 {
+    font-size: 3rem;
+    color: #ff4d94;
+}
+
+.contact_info p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.contact_info i {
+    margin-right: 10px;
+    font-size: 1.5rem;
+    color: #ff4d94;
 }
 
 
+/* Social Icons */
+/* Social icons container */
+.social-icons {
+    display: flex;
+    /* gap: 10px; */
+    justify-content: center;
+}
+
+/* Default styles for icons */
+.social-icons a {
+    font-size: 28px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
+
+/* Official Colors */
+.twitter i{ 
+    color: #1DA1F2; 
+}
+.instagram i{ color: #E1306C; }
+.linkedin i{ color: #0077B5; }
+.facebook i{ color: #1877F2; }
+.whatsapp i{ color: #25D366; }
+.tiktok i{ color: #000000; }
+
+/* Hover Effect */
+.social-icons a:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+}
 
 
-form button {
-    background-color: #5cb85c;
+/* CV Button */
+.cv_btn {
+    background-color: #ff0055;
     color: white;
-    padding: 10px;
+    font-size: 1.2rem;
+    padding: 12px 20px;
     border: none;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
 }
 
+.cv_btn:hover {
+    background-color: #e6004d;
+}
 
-form button:hover {
-    background-color: #4cae4c;
+/* Right Side - Contact Form */
+.contact_form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_form input,
+.contact_form textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #222;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+}
+
+.contact_form textarea {
+    height: 150px;
+    resize: none;
+}
+
+/* Submit Button */
+.submit_btn {
+    background-color: #ff0055;
+    color: white;
+    font-size: 1.2rem;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s ease-in-out;
+}
+
+.submit_btn:hover {
+    background-color: #e6004d;
 }
 
 
